@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BFC 包含浮动</title>
+    <style>
+        .new-bfc {
+            overflow: hidden;
+        }
+
+        .container {
+            border: 1px solid red;
+            background-color: green;
+            /*height: auto;*/
+        }
+
+        .container .floated {
+            float: left;
+            margin: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container new-bfc">
+    <div class="floated">box</div>
+    <div class="floated">box</div>
+</div>
+
+<div class="container">
+    <div class="floated">
+        Floated div
+    </div>
+    <div>
+        <p>
+            文字环绕问题：---->
+            Quae hic ut ab perferendis sit quod architecto,
+            dolor debitis quam rem provident aspernatur tempora
+            expedita.
+        </p>
+    </div>
+</div>
+</body>
+</html>

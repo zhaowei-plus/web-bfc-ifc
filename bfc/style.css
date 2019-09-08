@@ -1,0 +1,33 @@
+.bg-gray {
+    background-color: gray;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-blue {
+    background-color: blue;
+}
+
+.new-bfc {
+    overflow: hidden; /* 创建新的BFC */
+}
+
+.m100 {
+    margin: 100px;
+}
+.m80 {
+    margin: 80px;
+}
+
+.mtb100 {
+    margin: 100px 0;
+}
+
+.mtb80 {
+    margin: 80px 0;
+}
+
+.box {
+    width: 300px;
+    height: 120px;
+}
