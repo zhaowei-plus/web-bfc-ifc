@@ -7,7 +7,6 @@ CSS2.1 中只有BFC和IFC, CSS3中还增加了G（grid）FC和F(flex)FC。
 
 块格式化上下文对浮动定位（参见 float）与清除浮动（参见 clear）都很重要。浮动定位和清除浮动时只会应用于同一个BFC内的元素。浮动不会影响其它BFC中元素的布局，而清除浮动只能清除同一BFC中在它前面的元素的浮动。外边距折叠（Margin collapsing）也只会发生在属于同一BFC的块级元素之间。
 
-
 BFC的定义
 BFC，块级格式化上下文，是一个独立的渲染区域，只有Block-level Box参与，规定了内部Block-level Box如何布局，
 并且与这个区域外部毫不相干

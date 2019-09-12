@@ -2,12 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BFC 被浮动元素遮挡</title>
+    <style>
+        .float-left {
+            height: 100px;
+            width: 100px;
+            float: left;
+            background-color: lightblue;
+        }
+
+        .no-float {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            overflow: hidden;
+        }
+
+    </style>
 </head>
 <body>
-<div style="height: 100px;width: 100px;float: left;background: lightblue">我是一个左浮动的元素</div>
-<div style="width: 200px; height: 200px;background: grey">我是一个没有设置浮动,
-    也没有触发 BFC 元素, width: 200px; height:200px; background: grey;</div>
-
+<div class="float-left">
+    我是一个左浮动的元素
+</div>
+<div class="no-float">
+    我是一个没有设置浮动,
+    也没有触发 BFC 元素, width: 200px; height:200px; background: grey;
+</div>
 </body>
 </html>

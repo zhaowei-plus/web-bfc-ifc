@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BFC 避免外边距折叠</title>
+    <title>BFC 外边距重叠</title>
     <link href="style.css" rel="stylesheet">
     <style>
         .new-bfc {
@@ -21,9 +21,10 @@
     <p>box1</p>
     <p>box2</p>
     <!--创建新的bfc-->
-    <div class="new-bfc">
-        <p>box2</p>
-    </div>
+    <p>box2</p>
+<!--    <div class="new-bfc">-->
+<!--        <p>box2</p>-->
+<!--    </div>-->
 </div>
 </body>
 </html>
